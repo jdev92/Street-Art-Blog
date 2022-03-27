@@ -1,0 +1,301 @@
+/*GLOBAL */
+
+body {
+    background-color: #ededed;
+    font-family: 'Source Sans Pro', sans-serif;
+    color:#1d1e3d;
+}
+img {
+    max-width:100%;
+    height:auto;
+    width:auto;
+}
+main, .header {
+    background-color: #fff;
+    padding:3rem;
+}
+nav,
+h1,
+h2,
+h3,
+q {
+    font-family:'Mali', cursive;
+    margin: 0;
+	padding: 0;
+}
+ul {
+    padding:0px;
+}
+p {
+	margin: 0 0 1rem 0;
+}
+
+/* HEADER */
+
+header {
+    text-align: center;
+}
+nav ul {
+    list-style:none;
+}
+nav a {
+    font-size:2.4rem;
+    color:#1d1e3d;
+    margin-bottom: 1rem;
+    padding:1rem 2rem;
+    display: inline-block;
+    border-left:3px solid transparent;
+    border-bottom:3px solid transparent;
+}
+nav a:hover,
+nav a:focus,
+nav a.current {
+    background-color: #ededed;
+    border-left:3px solid #037d9d;
+    border-bottom:3px solid #037d9d;
+}
+.banner-accueil, .banner-galerie {
+    background-size: cover;
+    text-align:center;
+    padding:10rem 3rem; 
+}
+.banner-accueil {
+    background: url(../img/banner1.jpg) center center;
+
+}
+.banner-galerie {
+    background: url(../img/banner2.jpg) center center;
+
+}
+h1 {
+    color:#db0059;
+    background-color: rgba(255,255,255,0.8);
+    padding:2rem;
+}
+blockquote {
+    quotes:none;
+    text-align:center;
+    margin:3rem 5rem;
+    padding:3rem 2rem;
+    border-left:3px solid #037d9d;
+    border-bottom:3px solid #037d9d;
+    background-color: #ededed;
+}
+q, cite {
+    display:block;
+}
+q {
+    font-style:italic;
+}
+cite {
+    font-size:2rem;
+    font-style:normal;
+}
+
+/* article */
+h2 {
+    text-align:center;
+    font-size:2.8rem;
+    margin-top:5rem;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+/* affichage en CSS des fontawesome */
+.actu h2::before , .interviews h2::before {
+    font-family:"Font Awesome 5 Free";
+    font-size:4rem;
+}
+.actu h2::before {
+    content:"\f073";
+	color: #037d9d;
+}
+.interviews h2::before {
+    content:"\f130";
+	color: #db0059;
+}
+
+/* design des articles */
+article {
+    background-color: #ededed;
+    padding:2rem;
+    margin-top:3rem;
+}
+.actu h3 {
+	color: #037d9d;
+}
+.interviews h3 {
+	color: #db0059;
+}
+
+.date {
+    font-size:1.4rem;
+    font-style:italic;
+    margin-bottom:1rem;
+}
+article img {
+    margin-bottom:2rem;
+}
+.suite {
+    background-color: #1d1e3d;
+    color:#fff;
+	border-left: transparent 3px solid;
+	border-bottom: transparent 3px solid;
+	display:inline-block;
+	padding:1rem 2rem;
+	float:right;
+}
+
+.suite:hover,
+.suite:focus {
+    background-color: #fff;
+	border-left: #1d1e3d 3px solid;
+	border-bottom: #1d1e3d 3px solid;
+	color:#1d1e3d;
+}
+
+/* FOOTER */
+
+footer {
+    color:#fff;
+    background-color: #db0059;
+    padding:2rem;
+}
+.formulaire, .social {
+    padding:2rem;
+}
+
+.pictos a::before {
+    font-family:"Font Awesome 5 Brands";
+    color:#fff;
+    font-size:3rem;
+}
+
+.facebook::before {
+	content:"\f09a";
+}
+.twitter::before {
+	content:"\f099";
+}
+.instagram::before {
+	content:"\f16d";
+}
+.dribbble::before {
+	content:"\f17d";
+}
+
+.formulaire h3, .social h3 {
+    text-align:center;
+    margin-bottom:2rem;
+    font-size:2rem;
+}
+form {
+	color: white;
+	padding: 2rem 2rem 3rem 2rem;
+	border-left: 2px solid white;
+	border-bottom: 2px solid white;
+}
+input {
+    border:0;
+    padding:1rem;
+}
+label {
+    display:block;
+    margin-bottom:1rem;
+}
+input[type="email"] {
+	background-color: #f2d1de;
+    margin-bottom: 2rem;
+	color: #db0059;
+	width: 80%;
+}
+input[type="submit"] {
+	border:0;
+	background-color: #fff;
+	color: #db0059;
+	margin: 0 auto;
+}
+::placeholder {
+	color: #db0059;
+}
+
+.social {
+    text-align:center;
+}
+.pictos a {
+    margin:1.5rem;
+    padding:0.5rem;
+}
+
+/* LICENSE */
+
+.license {
+	padding: 2em;
+	text-align: center;
+	color: #fff;
+	background-color: #444;
+}
+
+.license img {
+	width: 65px;
+	height: auto;
+}
+
+.license a {
+	color: #DD5735;
+}
+
+/* VERSION TABLETTE */
+@media screen and (min-width:780px) {
+
+    nav ul {
+        display:flex;
+        justify-content:space-around;
+    }
+}
+
+/* VERSION DESKTOP */
+@media screen and (min-width:980px) {
+    .wrapper {
+        margin:0 auto;
+        max-width:1100px;
+    }
+    .header {
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:2rem;
+    }
+    header img {
+        width:70%;
+    }
+	nav li {
+		margin-left: 1rem;
+	}
+	blockquote {
+		margin: 3rem 10rem;
+	}
+	.actu, .interviews  {
+	    display:flex;
+	    flex-wrap:wrap;
+	}
+	article {
+	    width:48%;
+	}
+	section h2 {
+	    width:100%;
+	}
+	.banner-accueil {
+	    display:flex;
+	    justify-content:center;
+	}
+	
+	footer .wrapper {
+	    
+	    display:flex;
+	    justify-content:space-between;
+	}
+	.formulaire, .social {
+	    width:48%;
+	}
+}
